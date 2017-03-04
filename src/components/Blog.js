@@ -16,14 +16,14 @@ class Blog extends React.Component {
   render(){
     return(
       <div style={{width:'100%'}}>
-          {this.state.data.length==0?'请稍后':
+          {this.state.data.length==0?'请稍后...':
             this.state.data.map((item,index)=>(
               <div key={index} className='blog-card'>
                 <div className='blog-index'><span>{index+1}</span></div>
                 <div className='blog-desc'>
                   <h3>{item.title}</h3>
                   <p>{item.desc}</p>
-                  <a href={item.url}>阅读更多</a>
+                  <a href={item.url}>点击阅读</a>
                   <span>{item.data}</span>
                 </div>
               </div>

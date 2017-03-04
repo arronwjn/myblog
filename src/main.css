@@ -29,7 +29,7 @@ header{
 header h3{
   color:#fff;
 }
-header button{
+header>button{
   width: 50px;
   height: 30%;
   border-radius: 3px;
@@ -37,6 +37,7 @@ header button{
   background-color: #008579;
   color:#ccc;
   font-size: 5%;
+  cursor: pointer;
 }
 footer{
   height: 80px;
@@ -106,12 +107,14 @@ footer a:last-child{
   text-align: center;
   margin: 0 auto;
   color:#fff;
+  box-shadow: 1px 1px 2px 2px #c8c8c8;
 }
 .blog-desc{
   padding-left: 10px;
-  box-shadow: 1px 2px 3px #000;
+  box-shadow: 1px 1px 10px #000;
   position:relative;
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 .blog-desc>p{
   color:#383838;
@@ -125,6 +128,9 @@ footer a:last-child{
   background-color: deeppink;
   border-radius: 5%;
   color: #fff;
+}
+.blog-desc a:hover{
+  background-color: #f16b99;
 }
 .blog-desc span{
   position: absolute;
