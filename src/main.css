@@ -88,3 +88,47 @@ footer a:last-child{
 .home-cover p{
   opacity: 0.8;
 }
+.blog-card{
+  width: 96%;
+  margin: 10px auto;
+}
+.blog-index{
+  background-color: #03a9f4;
+  text-align: center;
+  line-height: 2.4;
+}
+.blog-index>span{
+  display: block;
+  border:2px #fff solid;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;
+  color:#fff;
+}
+.blog-desc{
+  padding-left: 10px;
+  box-shadow: 1px 2px 3px #000;
+  position:relative;
+  padding-bottom: 10px;
+}
+.blog-desc>p{
+  color:#383838;
+}
+.blog-desc a{
+  display: block;
+  padding: 2px 5px;
+  width: 5em;
+  text-align: center;
+  text-decoration: none;
+  background-color: deeppink;
+  border-radius: 5%;
+  color: #fff;
+}
+.blog-desc span{
+  position: absolute;
+  right:15px;
+  bottom:10px;
+  color:rgba(0,0,0,0.6);
+}
