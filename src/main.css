@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+html,body{
+  height:100%;
+}
+#root{
+  height: 100%;
+  -webkit-overflow-scrolling:touch;  /*解决苹果手机滑动平滑问题*/
+
+}
+.root{
+  display: flex;
+  flex-direction:column;
+  height:100%;
+}
+header{
+  height: 80px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: space-between;
+  padding: 0 10px;
+}
+header h3{
+  color:#fff;
+}
+header button{
+  width: 50px;
+  height: 30%;
+  border-radius: 3px;
+  border: none;
+  background-color: #008579;
+  color:#ccc;
+  font-size: 5%;
+}
+footer{
+  height: 80px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  background-color: rgba(0,0,0,0.9);
+
+}
+footer a{
+  flex-grow:1;
+  color:#2196f3;
+  opacity: 0.8;
+  border-right: 1px #908787 solid;
+}
+footer a:last-child{
+  border-right:none;
+}
+.mywrap{
+  flex-grow: 1;
+  overflow-y: scroll;
+  display: flex;
+  overflow-y: auto;
+}
+.home{
+  width: 100%;
+  background-image: url(./images/2.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.home-cover{
+  display: flex;
+  height: 50%;
+  background-color: rgba(0,0,0,0.5);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25%;
+}
+.home-cover h1,p,a{
+  color:#fff;
+  text-decoration: none;
+  line-height: 30px;
+}
+.home-cover p{
+  opacity: 0.8;
+}
