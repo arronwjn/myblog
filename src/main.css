@@ -43,6 +43,7 @@ header>button{
   color:#ccc;
   font-size: 5%;
   cursor: pointer;
+  outline: none;
 }
 footer{
   height: 80px;
@@ -83,8 +84,9 @@ footer a:last-child{
   align-items: center;
   text-align: center;
   justify-content: center;
-  flex-direction: column;
+  /*flex-direction: column;*/
   margin-top: 25%;
+  /*flex-grow: 1;*/
 }
 .home-cover h1,p,a{
   color:#fff;
