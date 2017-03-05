@@ -86,7 +86,12 @@ footer a:last-child{
   justify-content: center;
   /*flex-direction: column;*/
   margin-top: 25%;
-  /*flex-grow: 1;*/
+  flex-grow: 1;
+}
+.home-cover>div{
+  /*background-color: rgba(0,0,0,0.5);*/
+  height: 50%;
+  flex-grow: 1;
 }
 .home-cover h1,p,a{
   color:#fff;
