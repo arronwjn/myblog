@@ -17,6 +17,11 @@ html,body{
   flex-direction:column;
   height:100%;
 }
+@media(min-width:750px){
+  .root{
+    flex-direction: row;
+  }
+}
 header{
   height: 80px;
   flex-shrink: 0;
@@ -69,7 +74,7 @@ footer a:last-child{
   background-image: url(./images/2.jpg);
   -webkit-background-size: cover;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 30% 0%;
 }
 .home-cover{
   display: flex;
@@ -216,4 +221,29 @@ footer a:last-child{
   display: block;
   line-height: 2.3;
   text-align: center;
+}
+
+.leftnav{
+  width: 260px;
+  /*height: 80px;*/
+  /*display: flex;*/
+  flex-shrink: 0;
+  background-color: rgba(0,0,0,0.9);
+
+}
+.leftnav>h3{
+  color:#fff;
+  text-align: center;
+  line-height: 2.6;
+  font-size: 24px;
+  border-bottom: 2px solid #fff;
+}
+.leftnav>a{
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 50px;
+  margin-left: 25px;
+  color:#2196f3;
+  opacity: 0.8;
 }
