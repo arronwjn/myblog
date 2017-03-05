@@ -4,14 +4,29 @@ import Footer from './components/Footer';
 
 
 class App extends React.Component {
+  constructor(){
+    super();
+    this.state={
+      title:"Personal Website"
+    }
+  }
+  handleClick(e){
+    console.log(e)
+      // this.state.title=e;
+      // this.setState({title:this.state.title})
+  }
+  componentWillMount(){
+
+
+  }
   render () {
     return(
       <div className='root'>
-        <Header/>
+        <Header title={this.state.title}/>
         <div className='mywrap'>
           {this.props.children}
         </div>
-        <Footer/>
+        <Footer handleClick={this.handleClick.bind(this)}/>
       </div>
     )
   }
