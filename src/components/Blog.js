@@ -1,8 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import {Link} from 'react-router';
-import { Spin, Alert } from 'antd';
-import 'antd/dist/antd.css';
+// import { Spin, Alert } from 'antd';
+// import 'antd/dist/antd.css';
 
 
 class Blog extends React.Component {
@@ -23,9 +23,7 @@ class Blog extends React.Component {
 
       <div style={{width:'100%'}}>
 
-          {this.state.data.length==0?<Spin tip="Loading...">
-          <Alert message="Alert message title" description="Further details about the context of this alert." type="info"/>
-        </Spin>:
+          {this.state.data.length==0?'...':
             this.state.data.map((item,index)=>(
               <div key={index} className='blog-card'>
                 <div className='blog-index'><span>{index+1}</span></div>
