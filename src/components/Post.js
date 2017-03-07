@@ -2,7 +2,9 @@ import React from 'react';
 import axios from 'axios';
 import {Link} from 'react-router';
 import marked from 'marked';
+import { Spin, Alert } from 'antd';
 import '../main.css'
+
 
 
 marked.setOptions({
@@ -29,7 +31,9 @@ class Post extends React.Component {
   render () {
     return(
       <div className='post-content'>
-          {this.state.data.length==0 ?'正在加载中':<div dangerouslySetInnerHTML={{__html: marked(this.state.data)}}></div>}
+          {this.state.data.length==0 ?<Spin tip="Loading...">
+          <Alert message="Alert message title" description="Further details about the context of this alert." type="info"/>
+        </Spin>:<div dangerouslySetInnerHTML={{__html: marked(this.state.data)}}></div>}
       </div>
     )
   }

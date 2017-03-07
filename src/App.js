@@ -22,7 +22,7 @@ class App extends React.Component {
       title:this.props.router.isActive('/',true)?'Personal Website':
       this.props.router.isActive('/blog')?'博客':
       this.props.router.isActive('/work')?'工作':
-      this.props.router.isActive('/note')?'笔记':'文章'
+      this.props.router.isActive('/note')?'关于':'文章'
     })
   }
   componentWillReceiveProps(){
