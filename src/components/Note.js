@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
-import '../main.css';
+// import '../main.css';
 import Img1 from '../images/1.jpg'
 
 
@@ -9,9 +9,9 @@ class Note extends React.Component {
     return(
         <div className='about'>
           <ul>
-            <li>
-              <dt><span>基本信息</span></dt>
-              <img src={Img1}/>
+            <li className='about-li'>
+              <dt><i className="fa fa-location-arrow" aria-hidden="true"></i><span>基本信息</span></dt>
+              <div className='img'><img src={Img1}/></div>
               <dd><span>个人信息:</span><lable>王健男/男/23岁</lable></dd>
               <dd><span>毕业院校:</span><lable>长春工业大学</lable></dd>
               <dd><span>所学专业:</span><lable>计算机网络技术</lable></dd>
@@ -19,7 +19,7 @@ class Note extends React.Component {
               <dd><span>现居住地:</span><lable>河北秦皇岛</lable></dd>
             </li>
             <li>
-              <dt><span>联系方式</span></dt>
+              <dt><i className="fa fa-location-arrow" aria-hidden="true"></i><span>联系方式</span></dt>
               <dd><span>联系电话:</span><lable>15333347509</lable></dd>
               <dd><span>联系微信:</span><lable>13756316291</lable></dd>
               <dd><span>联系QQ:</span><lable>904089747</lable></dd>
@@ -29,19 +29,19 @@ class Note extends React.Component {
               <dd><span>Markdown:</span><a href='https://arronwjn.github.io/#toc'>https://arronwjn.github.io/#toc</a></dd>
             </li>
             <li>
-              <dt><span>主要技能</span></dt>
+              <dt><i className="fa fa-location-arrow" aria-hidden="true"></i><span>主要技能</span></dt>
               <dd>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Javascript</span>
-                <span>jquery</span>
-                <span>BootStrap</span>
-                <span>React</span>
-                <span>Node.js</span>
+                <button type="button" className="btn btn-primary">HTML</button>
+                <button type="button" className="btn btn-primary">CSS</button>
+                <button type="button" className="btn btn-primary">Javascript</button>
+                <button type="button" className="btn btn-success">jquery</button>
+                <button type="button" className="btn btn-success">BootStrap</button>
+                <button type="button" className="btn btn-warning">React</button>
+                <button type="button" className="btn btn-warning">Node.js</button>
               </dd>
             </li>
             <li>
-              <dt><span>技能详解</span></dt>
+              <dt><i className="fa fa-location-arrow" aria-hidden="true"></i><span>技能详解</span></dt>
               <dd>
                 <ul>
                   <li>
@@ -76,7 +76,7 @@ class Note extends React.Component {
               </dd>
             </li>
             <li>
-              <dt><span>自我评价</span></dt>
+              <dt><i className="fa fa-location-arrow" aria-hidden="true"></i><span>自我评价</span></dt>
               <p>
                 高考结束后由于对计算机的热爱，报考了计算机专业，大学期间对网站开发的热爱更是一发不可收拾，
                 利用空闲时间在视频网站自学一些先进技术，对学习充满着激情．

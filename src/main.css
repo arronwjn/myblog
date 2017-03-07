@@ -269,8 +269,13 @@ footer a:last-child{
 .about>ul{
   padding: 5px;
 }
+.about>ul>li>dt>i{
+  font-size: 18px;
+  color:#0097A7;
+  margin-right: 2px;
+}
 .about>ul>li>dd>a{
-  color:#000;
+  color:#00BCD4;
 }
 .about>ul>li>dd>ul{
   border-left: 2px solid #0097A7;
@@ -307,6 +312,9 @@ footer a:last-child{
   color:rgba(0,0,0,0.6);
   font-weight: bold;
 }
+.about>ul>li>dd>button{
+  margin: 5px;
+}
 .about>ul>li>dd>lable{
   color:#969696;
 }
@@ -331,20 +339,26 @@ footer a:last-child{
 }
 .work{
   display: flex;
-  /*align-items: center;*/
   flex-wrap:wrap;
-  flex-direction: row;;
+  flex-direction: row;
   flex-grow: 1;
-  /*align-items: center;*/
   justify-content: center;
 }
 .work>div{
   width: 250px;
   margin: 5px;
+  text-align: center;
 }
-img{
-  width: 60px;
-  height: 80px;
+.about-li{
+  position: relative;
+}
+.about-li .img{
+  position: absolute;
+  right: 0px;
+}
+.img>img{
+  width: 100px;
+
 }
 .material{
   display: flex;
