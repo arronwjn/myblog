@@ -2,8 +2,11 @@ import React from 'react';
 import axios from 'axios';
 import {Link} from 'react-router';
 import marked from 'marked';
-import { Spin, Alert } from 'antd';
+import CircularProgress from 'material-ui/CircularProgress';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+// import { Spin, Alert } from 'antd';
 import '../main.css'
+
 
 
 
@@ -32,9 +35,7 @@ class Post extends React.Component {
   render () {
     return(
       <div className='post-content'>
-          {this.state.data.length==0 ?<div><Spin tip="Loading...">
-          <Alert message="Alert message title" description="Further details about the context of this alert." type="info"/>
-        </Spin></div>:<div dangerouslySetInnerHTML={{__html: marked(this.state.data)}}></div>}
+          {this.state.data.length==0 ?<div className='material'><MuiThemeProvider><CircularProgress size={60} thickness={7} /></MuiThemeProvider></div>:<div dangerouslySetInnerHTML={{__html: marked(this.state.data)}}></div>}
       </div>
     )
   }

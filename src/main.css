@@ -346,3 +346,8 @@ img{
   width: 60px;
   height: 80px;
 }
+.material{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
