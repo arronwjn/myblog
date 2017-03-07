@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import {Link} from 'react-router';
 import marked from 'marked';
-// import { Spin, Alert } from 'antd';
+import { Spin, Alert } from 'antd';
 import '../main.css'
 
 
@@ -28,13 +28,13 @@ class Post extends React.Component {
   componentWillMount(){
     console.log(this.props)
   }
-//   <Spin tip="Loading...">
-//   <Alert message="Alert message title" description="Further details about the context of this alert." type="info"/>
-// </Spin>
+
   render () {
     return(
       <div className='post-content'>
-          {this.state.data.length==0 ?'...':<div dangerouslySetInnerHTML={{__html: marked(this.state.data)}}></div>}
+          {this.state.data.length==0 ?<div><Spin tip="Loading...">
+          <Alert message="Alert message title" description="Further details about the context of this alert." type="info"/>
+        </Spin></div>:<div dangerouslySetInnerHTML={{__html: marked(this.state.data)}}></div>}
       </div>
     )
   }
