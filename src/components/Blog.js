@@ -73,7 +73,7 @@ class Blog extends React.Component {
       for (var i = 0; i < this.state.data.length; i++) {
         let thisPost = this.state.data[i];
         if (thisPost.title.indexOf(this.state.inputvalue)!= -1) {
-          blogCards.push(<BlogCard title={thisPost.title} date={thisPost.date} index={thisPost.index} key={Math.random()} url={thisPost.url} />)
+          blogCards.push(<BlogCard title={thisPost.title} data={thisPost.data} index={i} desc={thisPost.desc} key={Math.random()} url={thisPost.url} />)
         }
       }
     }
