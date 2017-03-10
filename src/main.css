@@ -346,8 +346,25 @@ footer a:last-child{
 }
 .work>div{
   width: 250px;
+  height: 350px;
+  padding: 20px 10px;
   margin: 5px;
   text-align: center;
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 9px #ccc;
+}
+.work div img{
+  display: block;
+  width: 80%;
+  height: 50%;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+}
+.work div h3{
+  font-size: 22px;
+}
+.work div p{
+  color:#525252;
 }
 .about-li{
   position: relative;
@@ -356,7 +373,7 @@ footer a:last-child{
   position: absolute;
   right: 0px;
 }
-.img>img{
+.about .img>img{
   width: 100px;
 
 }
@@ -364,4 +381,13 @@ footer a:last-child{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.select{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add{
+  display: none;
 }
