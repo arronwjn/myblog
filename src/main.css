@@ -105,35 +105,62 @@ footer a:last-child{
   text-decoration: none;
   line-height: 30px;
 }
+.blog{
+  display: flex;
+  justify-content: center;
+}
 .blog-card{
-  width: 96%;
-  margin: 10px auto;
+  /*width: 96%;
+  margin: 10px auto;*/
+  display: flex;
+  /*flex-grow: 1;*/
+  /*justify-content: center;*/
+
+  width: 90%;
+  margin-bottom: 15px;
 }
 .blog-index{
+
   background-color: rgb(0, 188, 212);
   text-align: center;
-  line-height: 2.4;
+box-shadow: 0px 2px 5px 0px #ccc;
+  font-size: 24px;
+  margin: 0 0;
+  display: block;
+  width: 12%;
+  text-align: center;
+  line-height: 131px;
+  color:#fff;
+  font-weight: bold;
+    /*flex-grow: 1;*/
 }
 .blog-index>span{
-  display: block;
+  /*display: block;
   border:2px #fff solid;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   text-align: center;
-  margin: 0 auto;
-  color:#fff;
-  box-shadow: 1px 1px 2px 2px #c8c8c8;
+  margin: 0 auto;*/
+
+  /*display: block;*/
 }
 .blog-desc{
-  padding-left: 10px;
-  box-shadow: 1px 1px 10px #000;
+  padding-left: 20px;
+  box-shadow: 0px 2px 5px 0px #ccc;
   position:relative;
   padding-bottom: 10px;
   padding-top: 10px;
+
+  flex-grow: 1;
+}
+.blog-desc>h3{
+  font-size: 1.17em;
+  color:#636363;
 }
 .blog-desc>p{
-  color:#383838;
+  color:#9e9e9e;
+  font-size: 1.07em;
 }
 .blog-desc a{
   display: block;
@@ -144,6 +171,7 @@ footer a:last-child{
   background-color: deeppink;
   border-radius: 5%;
   color: #fff;
+  float: left;
 }
 .blog-desc a:hover{
   background-color: #f16b99;
@@ -174,6 +202,9 @@ footer a:last-child{
   font-size: 1.5em;
   margin-top: 0.8em;
   margin-bottom: 0.8em;
+}
+.post-content h3{
+  color: #14877E;
 }
 .post-content ol {
   padding-left: 20px;
@@ -344,11 +375,16 @@ footer a:last-child{
   flex-grow: 1;
   justify-content: center;
 }
+@media (min-width:1054px) {
+  .work>div{
+    flex-basis: 25%;
+  }
+}
 .work>div{
   width: 250px;
   height: 350px;
   padding: 20px 10px;
-  margin: 5px;
+  margin: 15px;
   text-align: center;
   border: 1px solid #ccc;
   box-shadow: 5px 5px 9px #ccc;
@@ -362,9 +398,10 @@ footer a:last-child{
 }
 .work div h3{
   font-size: 22px;
+  color:#678695;
 }
 .work div p{
-  color:#525252;
+  color:#969696;
 }
 .about-li{
   position: relative;
@@ -387,6 +424,11 @@ footer a:last-child{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px
+}
+.fa-search{
+  color:#ccc;
+  font-size: 16px;
 }
 .add{
   display: none;

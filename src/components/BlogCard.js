@@ -19,7 +19,7 @@ class BlogCard extends React.Component {
   }
   render () {
     return(
-      <div>
+      <div className='blog'>
             <div key={Math.random()} className='blog-card'>
               <div className='blog-index'><span>{this.props.index+1}</span></div>
               <div className='blog-desc'>

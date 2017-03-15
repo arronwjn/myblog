@@ -3,7 +3,6 @@ import axios from 'axios';
 import  '../main.css'
 import AutoComplete from 'material-ui/AutoComplete';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import FlatButton from 'material-ui/FlatButton';
 import TextField from 'material-ui/TextField';
 import BlogCard from './BlogCard';
 import map from 'lodash/fp/map';
@@ -79,15 +78,15 @@ class Blog extends React.Component {
     }
     return(
       <div style={{width:'100%'}}>
+
           <div className='select'>
+            <i className="fa fa-search" aria-hidden="true"></i>
             <MuiThemeProvider>
               <TextField
                 hintText="搜索"
                 onChange={this.handelInput.bind(this)}/>
             </MuiThemeProvider>
-            <MuiThemeProvider>
-              <FlatButton label="Select" primary={true} onClick={this.handleClick.bind(this,1)}/>
-            </MuiThemeProvider>
+
           </div>
         {this.state.data.length==0?<div className='material'><MuiThemeProvider><CircularProgress size={60} thickness={7}/></MuiThemeProvider></div>:''}
         {blogCards}
