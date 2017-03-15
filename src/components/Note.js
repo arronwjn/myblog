@@ -7,7 +7,8 @@ import Img1 from '../images/1.jpg'
 class Note extends React.Component {
   render () {
     return(
-        <div className='about'>
+      <div className='about-warp'>
+        <div className='about' >
           <ul>
             <li className='about-li'>
               <dt><i className="fa fa-location-arrow" aria-hidden="true"></i><span>基本信息</span></dt>
@@ -88,6 +89,7 @@ class Note extends React.Component {
             </li>
           </ul>
         </div>
+      </div>
     )
   }
 }

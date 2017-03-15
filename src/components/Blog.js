@@ -77,7 +77,7 @@ class Blog extends React.Component {
       }
     }
     return(
-      <div style={{width:'100%'}}>
+      <div style={{width:'100%',margin:'0 auto'}}>
 
           <div className='select'>
             <i className="fa fa-search" aria-hidden="true"></i>
